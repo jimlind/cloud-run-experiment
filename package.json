@@ -1,0 +1,10 @@
+{
+    "name": "cloud-run-experiment",
+    "version": "0.0.1",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "engines": {
+        "node": "16.x.x"
+    }
+}
