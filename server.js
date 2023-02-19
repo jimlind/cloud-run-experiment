@@ -14,6 +14,7 @@ const secretManagerClient = new SecretManagerServiceClient({
 });
 
 const name = `projects/letterboxd-bot/secrets/DISCORD_DEV_BOT_TOKEN/versions/latest`;
+console.log({ name });
 secretManagerClient
     .accessSecretVersion({ name })
-    .then(([response]) => console.log(response.payload.data.toString("utf8")));
+    .then(([response]) => console.log({ response: response.payload.data.toString("utf8") }));
